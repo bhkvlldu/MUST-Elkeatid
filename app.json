@@ -1,5 +1,5 @@
 {
-    "name": "- NukeThon Music Bot",
+    "name": " Music Bot",
     "description": "- يوزر بوت اغاني في مكالمات .",
     "logo": "",
     "keywords": [
@@ -8,7 +8,7 @@
         "sython",
         "VideoPlayer"
     ],
-    "repository": "https://github.com/P9P9/NUKEMU",
+    "repository": "https://github.com/bhkvlldu/MUST-Elkeatid",
     "env": {
         "SESSION": {
             "description": "هنا ضع كود البايروقرام",
@@ -33,7 +33,7 @@
         
         },
         "OWNER": {
-            "description": "معرف حساب المالك بدون علامه @ مثال : K_8_U",
+            "description": "معرف حساب المالك بدون علامه @ مثال : HPython",
             "required": true            
             },
         "OWNER_NAME": {
