@@ -75,7 +75,7 @@ async def play(client, m: Message):
     if replied:
         if replied.audio or replied.voice:
             await m.delete()
-            huehue = await replied.reply("**ابشر من عيوني ثواني واشغلها  **")
+            huehue = await replied.reply("** ثواني عمري واشغل **")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -94,7 +94,7 @@ async def play(client, m: Message):
                     caption=f"""
 **🏷️ العنوان ↞ [{songname}]({link})
 💬 ايدي المحادثه ↞ `{chat_id}`
-🎶 طلب من ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/T_G_L)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/ReallyKoko)
+🎶 طلب من ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/K_8_U)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/NUKETHON)
 """,                )
             else:
                 await call_py.join_group_call(                    chat_id,                    AudioPiped(                        dl,                    ),                    stream_type=StreamType().pulse_stream,                )
@@ -105,7 +105,7 @@ async def play(client, m: Message):
                     caption=f"""
 **🏷️ العنوان ↞ [{songname}]({link})
 💬 ايدي المحادثه ↞ `{chat_id}`
-🎶 طلب من ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/T_G_L)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/ReallyKoko)
+🎶 طلب من ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/K_8_U)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/NUKETHON)
 """,                )
 
     else:
@@ -136,7 +136,7 @@ async def play(client, m: Message):
 **🏷️  العنوان ↞ [{songname}]({url})
 ⏱️ مده المقطع ↞ {duration}
 💬 ايدي المحادثه ↞ `{chat_id}`
-🎶 طلب من ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/T_G_L)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/ReallyKoko)
+🎶 طلب من ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/K_8_U)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/NUKETHON)
 """,
                         )
                     else:
@@ -157,7 +157,7 @@ async def play(client, m: Message):
 **🏷️  العنوان ↞ [{songname}]({url})
 ⏱️ مده المقطع ↞ {duration}
 💬 ايدي المحادثه ↞ `{chat_id}`
-🎶 طلب من ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/T_G_L)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/ReallyKoko)
+🎶 طلب من ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/K_8_U)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/NUKETHON)
 """,
                             )
                         except Exception as ep:
@@ -199,7 +199,7 @@ async def vplay(client, m: Message):
                     caption=f"""
 **🏷️ العنوان ↞ [{songname}]({link})
 💬 ايدي المحادثه ↞ `{chat_id}`
-🎶 طلب من ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/T_G_L)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/ReallyKoko)
+🎶 طلب من ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/K_8_U)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/NUKETHON)
 """,
                 )
             else:
@@ -222,7 +222,7 @@ async def vplay(client, m: Message):
                     caption=f"""
 **🏷️ العنوان ↞ [{songname}]({link})
 💬 ايدي المحادثه ↞ `{chat_id}`
-🎶 طلب من ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/T_G_L)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/ReallyKoko)
+🎶 طلب من ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/K_8_U)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/NUKETHON)
 """,                )
 
     else:
@@ -255,7 +255,7 @@ async def vplay(client, m: Message):
 **🏷️  العنوان ↞ [{songname}]({url})
 ⏱️ مده المقطع ↞ {duration}
 💬 ايدي المحادثه ↞ `{chat_id}`
-🎶 طلب من : {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/T_G_L)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/ReallyKoko)
+🎶 طلب من : {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/K_8_U)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/NUKETHON)
 """,                        )
                     else:
                         try:
@@ -268,7 +268,7 @@ async def vplay(client, m: Message):
 **🏷️  العنوان ↞ [{songname}]({url})
 ⏱️ مده المقطع ↞ {duration}
 💬 ايدي المحادثه ↞ `{chat_id}`
-🎶 طلب من ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/T_G_L)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/ReallyKoko)
+🎶 طلب من ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/K_8_U)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/NUKETHON)
 """,                            )
                         except Exception as ep:
                             await huehue.edit(f"`{ep}`")
@@ -309,7 +309,7 @@ async def playfrom(client, m: Message):
 **▶ ابدأ تشغيل الأغاني من {chat}
 🏷️ العنوان ↞ [{songname}]({link})
 💬 المحادثه ↞ `{chat_id}`
-🎶 من الطلب ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/T_G_L)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/ReallyKoko)
+🎶 من الطلب ↞ {m.from_user.mention}**\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫🎼](t.me/K_8_U)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/NUKETHON)
 """,                    )
             await hmm.delete()
             await m.reply(                f"➕ يضيف {lmt} أغنية في قائمة الانتظار \n• ارسل {HNDLR}تلقائي لاضاف اغنيه في القائمه الانتضار**"            )
