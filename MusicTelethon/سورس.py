@@ -39,11 +39,11 @@ async def ping(client, m: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await m_reply.edit(
-        f"**✶ مرحباً بك عزيزي بوت الأغاني يعمل بنجاح .**\n[ㅤㅤㅤㅤㅤㅤ]({PING_PIC})\n**༄ 𝐏𝐢𝐧𝐠 ⇝** `{delta_ping * 1000:.3f}ms ` \n**༄ 𝐔𝐩𝐭𝐢𝐦𝐞 ⇝**  {uptime}\n\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 🎼](t.me/K_8_U)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/NukeThon)"
+        f"**✶ مرحباً بك عزيزي بوت الأغاني يعمل بنجاح .**\n[ㅤㅤㅤㅤㅤㅤ]({PING_PIC})\n**༄ 𝐏𝐢𝐧𝐠 ⇝** `{delta_ping * 1000:.3f}ms ` \n**༄ 𝐔𝐩𝐭𝐢𝐦𝐞 ⇝**  {uptime}\n\n  ༄  [𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 🎼](t.me/HPython)\n  ༄  [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/MusicElkeatib)"
     )
 
 @Client.on_message(
-    filters.user(SUDO_USERS) & filters.command(["restart","koko","ريستارت"], prefixes=f"{HNDLR}")
+    filters.user(SUDO_USERS) & filters.command(["restart", "ريستارت"], prefixes=f"{HNDLR}")
 )
 async def restart(client, m: Message):
     await m.delete()
@@ -87,7 +87,7 @@ async def help(client, m: Message):
 ➖ | لعرض معلومات السورس ↞  ⊰ `{HNDLR}سورس` ⊱
 ➖ | لتشغيل 10 اغاني عشوائيه ↞ ⊰ `{HNDLR}عشوائيه` + معرف القناه او القروب  ⊱
 𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅✭𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅
-- ➮ [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/NukeThon) 
+- ➮ [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/MusicElkeatib) 
 """
     await m.reply(HEPZ, disable_web_page_preview=True)
 
@@ -98,7 +98,7 @@ async def repo(client, m: Message):
     REPZ = f"""
 <b>⇸ **𝐖𝐞𝐥𝐜𝐨𝐦𝐞 ❪ {m.from_user.mention} ❫**
 
-**༄ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 ↠** [𝒌𝒐𝒌𝒐](t.me/K_8_U)\n**༄ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ↠** [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜‍](t.me/NukeThon) .\n\n**༄ 𝐎𝐰𝐧𝐞𝐫 ↠ [{OWNER_NAME}](t.me/{OWNER}) **\n\n𐂂
+**༄ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 ↠** [- ♫︎𝗘𝗹𝗸𝗲𝗮𝘁-𝗶𝗯 ¹: 🇵🇱⃤](t.me/HPython)\n**༄ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ↠** [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜‍](t.me/MusicElkeatib) .\n\n**༄ 𝐎𝐰𝐧𝐞𝐫 ↠ [{OWNER_NAME}](t.me/{OWNER}) **\n\n𐂂
 
 """
     await m.reply(REPZ, disable_web_page_preview=True)
